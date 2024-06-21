@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="slider.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Landing Page Traditional Game</title>
+  </head>
+  <body>
+    <header id="home">
+      <div class="sticky">
+        <nav>
+          <a href="#" class="brand">LOGO</a>
+          <div class="hamburger" onclick="hamburger()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </div>
+          <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#work">WORK</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+            <li><a href="#">ABOUT ME</a></li>
+          </ul>
+          <div class="auth">
+            <a href="#">SIGN UP</a>
+            <a href="#">LOGIN</a>
+          </div>
+        </nav>
+      </div>
+      <div class="hero">
+        <h1>PLAY TRADITIONAL GAME</h1>
+        <p>Experience new traditional game play</p>
+        <button type="button">PLAY NOW</button>
+        <div class="scroll">
+          <span>THE STORY</span>
+          <svg
+            width="23"
+            height="11"
+            viewBox="0 0 23 11"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M21.5786 1.83374H1.32422L11.338 10.0029L21.5786 1.83374Z"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+      </div>
+    </header>
+    <section class="about" id="work">
+      <p>What's so special?</p>
+      <div class="galery">
+        <h2>THE GAMES</h2>
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <img src="assets/main-bg.jpg" style="width: 100%; height: 100%" />
+          </div>
+
+          <div class="mySlides fade">
+            <img
+              src="assets/bg-feature.png"
+              style="width: 100%; height: 100%"
+            />
+          </div>
+
+          <div class="mySlides fade">
+            <img
+              src="assets/newsletter.png"
+              style="width: 100%; height: 100%"
+            />
+          </div>
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          <!-- The dots/circles -->
+          <div style="text-align: center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="feature">
+      <div class="feat-space"></div>
+      <div class="feat-text">
+        <p class="h3">What's so special?</p>
+        <h2>FEATURES</h2>
+        <ul>
+          <li>
+            <p class="feat-title">TRADITIONAL GAME</p>
+            <p>
+              if you miss your childhood, we provide many traditional games here
+            </p>
+          </li>
+          <li>
+            <p class="feat-title">GAME SUIT</p>
+          </li>
+          <li>
+            <p class="feat-title">TBD</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="requirement">
+      <p class="faq">Can My Computer Run this game?</p>
+      <h2>SYSTEM</h2>
+      <h2>REQUIREMENTS</h2>
+      <table>
+        <tr>
+          <td>
+            <p class="text-orange">OS:</p>
+            <p>Windows 7 64-bit only (NO OSX support at this time)</p>
+          </td>
+          <td>
+            <p class="text-orange">PROCESSOR:</p>
+            <p>Intel Core 2 Dou @ 2.4 GHZ or AMD Athlon X2 @ 2.8 GHZ</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p class="text-orange">MEMORY:</p>
+            <p>4 GB RAM</p>
+          </td>
+          <td>
+            <p class="text-orange">STORAGE:</p>
+            <p>8 GB available space</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <p class="text-orange">GRAPHICS:</p>
+            <p>
+              NVIDIA Geforce GTX 660 2GB or AMD Radeon HD 7850 2GB DirectX 11
+              (Shader Model 5)
+            </p>
+          </td>
+        </tr>
+      </table>
+    </section>
+    <section class="quote">
+      <div class="quote-title">
+        <h2>TOP SCORES</h2>
+        <p class="description">
+          this top score from various games provided on this platform
+        </p>
+        <button type="button">see more</button>
+      </div>
+      <div class="quote-list">
+        <div class="quote-content">
+          <div class="quote-header">
+            <div class="profile">
+              <img src="assets/profile1.png" alt="" />
+              <div class="name">
+                <p>Evan Lahti</p>
+                <p>PC Gamer</p>
+              </div>
+            </div>
+            <svg
+              width="19"
+              height="15"
+              viewBox="0 0 19 15"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                opacity="0.3"
+                d="M18.3981 2.41449C17.7231 2.70013 17.0072 2.88765 16.2741 2.97084C17.0365 2.53297 17.623 1.84099 17.899 1.01526C17.1731 1.42694 16.3789 1.71699 15.5508 1.87286C14.8519 1.15947 13.8744 0.755389 12.8519 0.757085C10.8105 0.757085 9.15361 2.33909 9.15361 4.29061C9.15361 4.5679 9.18627 4.83816 9.25021 5.09623C6.17639 4.94862 3.45216 3.54236 1.62787 1.404C1.30934 1.92529 1.12764 2.53297 1.12764 3.18076C1.12764 4.40623 1.78024 5.48805 2.77231 6.12188C2.18494 6.10468 1.61046 5.95309 1.09706 5.67983V5.7249C1.09706 7.43659 2.37189 8.86495 4.06278 9.19027C3.5182 9.3312 2.94722 9.35187 2.39305 9.25072C2.86384 10.6549 4.22998 11.6764 5.8475 11.7061C4.5821 12.6524 2.98781 13.2184 1.25483 13.2184C0.960153 13.2181 0.66574 13.2015 0.373047 13.1689C2.00943 14.1713 3.95365 14.7571 6.04185 14.7571C12.8438 14.7571 16.5627 9.37118 16.5627 4.70056C16.5627 4.54779 16.5627 4.39502 16.5513 4.24335C17.2749 3.74295 17.8998 3.12372 18.3969 2.41449H18.3981Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+          <div class="quote-body">
+            <p>"One of my gaming higlights of the year."</p>
+            <p>june 18, 2021</p>
+          </div>
+        </div>
+        <div class="quote-content">
+          <div class="quote-header">
+            <div class="profile">
+              <img src="assets/profile2.png" alt="" />
+              <div class="name">
+                <p>Jada Grifin</p>
+                <p>Nerdreactor</p>
+              </div>
+            </div>
+            <svg
+              width="19"
+              height="15"
+              viewBox="0 0 19 15"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                opacity="0.3"
+                d="M18.3981 2.41449C17.7231 2.70013 17.0072 2.88765 16.2741 2.97084C17.0365 2.53297 17.623 1.84099 17.899 1.01526C17.1731 1.42694 16.3789 1.71699 15.5508 1.87286C14.8519 1.15947 13.8744 0.755389 12.8519 0.757085C10.8105 0.757085 9.15361 2.33909 9.15361 4.29061C9.15361 4.5679 9.18627 4.83816 9.25021 5.09623C6.17639 4.94862 3.45216 3.54236 1.62787 1.404C1.30934 1.92529 1.12764 2.53297 1.12764 3.18076C1.12764 4.40623 1.78024 5.48805 2.77231 6.12188C2.18494 6.10468 1.61046 5.95309 1.09706 5.67983V5.7249C1.09706 7.43659 2.37189 8.86495 4.06278 9.19027C3.5182 9.3312 2.94722 9.35187 2.39305 9.25072C2.86384 10.6549 4.22998 11.6764 5.8475 11.7061C4.5821 12.6524 2.98781 13.2184 1.25483 13.2184C0.960153 13.2181 0.66574 13.2015 0.373047 13.1689C2.00943 14.1713 3.95365 14.7571 6.04185 14.7571C12.8438 14.7571 16.5627 9.37118 16.5627 4.70056C16.5627 4.54779 16.5627 4.39502 16.5513 4.24335C17.2749 3.74295 17.8998 3.12372 18.3969 2.41449H18.3981Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+          <div class="quote-body">
+            <p>
+              "The next big thing in the world of streaming and survival games."
+            </p>
+            <p>june 10, 2021</p>
+          </div>
+        </div>
+        <div class="quote-content">
+          <div class="quote-header">
+            <div class="profile">
+              <img src="assets/profile3.png" alt="" />
+              <div class="name">
+                <p>Aaron Williams</p>
+                <p>Uproxx</p>
+              </div>
+            </div>
+            <svg
+              width="19"
+              height="15"
+              viewBox="0 0 19 15"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                opacity="0.3"
+                d="M18.3981 2.41449C17.7231 2.70013 17.0072 2.88765 16.2741 2.97084C17.0365 2.53297 17.623 1.84099 17.899 1.01526C17.1731 1.42694 16.3789 1.71699 15.5508 1.87286C14.8519 1.15947 13.8744 0.755389 12.8519 0.757085C10.8105 0.757085 9.15361 2.33909 9.15361 4.29061C9.15361 4.5679 9.18627 4.83816 9.25021 5.09623C6.17639 4.94862 3.45216 3.54236 1.62787 1.404C1.30934 1.92529 1.12764 2.53297 1.12764 3.18076C1.12764 4.40623 1.78024 5.48805 2.77231 6.12188C2.18494 6.10468 1.61046 5.95309 1.09706 5.67983V5.7249C1.09706 7.43659 2.37189 8.86495 4.06278 9.19027C3.5182 9.3312 2.94722 9.35187 2.39305 9.25072C2.86384 10.6549 4.22998 11.6764 5.8475 11.7061C4.5821 12.6524 2.98781 13.2184 1.25483 13.2184C0.960153 13.2181 0.66574 13.2015 0.373047 13.1689C2.00943 14.1713 3.95365 14.7571 6.04185 14.7571C12.8438 14.7571 16.5627 9.37118 16.5627 4.70056C16.5627 4.54779 16.5627 4.39502 16.5513 4.24335C17.2749 3.74295 17.8998 3.12372 18.3969 2.41449H18.3981Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+          <div class="quote-body">
+            <p>
+              "Snoop dog playing the wildy Entertaining 'SOS' is Ridiculous."
+            </p>
+            <p>Desember 24, 2018</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="newsletter" id="contact">
+      <div class="newsletter-space"></div>
+      <div class="newsletter-text">
+        <p>Want to stay in touch?</p>
+        <h2>NEWSLETTER SUBSCRIBE</h2>
+        <p>
+          In order to start receiving our news, all you have to do is enter your
+          email address. Everyting else will be taken care of by us. We will
+          send you emails containing information about game. We don't spam.
+        </p>
+        <form action="#">
+          <input type="text" placeholder="Your email address" />
+          <button type="submit">Subscribe now</button>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-menu">
+        <div class="menu">
+          <a href="#">MAIN</a>
+          <a href="#">ABOUT</a>
+          <a href="#">GAME FEATURES</a>
+          <a href="#">SYSTEM REQUIREMENTS</a>
+          <a href="#">QUOTES</a>
+          <div class="sosmed">
+            <svg
+              width="10"
+              height="20"
+              viewBox="0 0 10 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M6.65382 19.1728H2.56282V9.67884H0.517822V6.40584H2.56282V4.44184C2.56282 1.77284 3.71782 0.183838 6.99582 0.183838H9.72582V3.45684H8.02082C6.74282 3.45684 6.65882 3.91484 6.65882 4.76884L6.65382 6.40584H9.74582L9.38382 9.67884H6.65382V19.1728Z"
+                fill="white"
+              />
+            </svg>
+            <svg
+              width="22"
+              height="17"
+              viewBox="0 0 22 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M21.2138 2.42991C20.4408 2.75191 19.6098 2.96691 18.7388 3.06491C19.6288 2.56491 20.3118 1.77291 20.6338 0.830912C19.7998 1.29291 18.8778 1.62891 17.8958 1.81091C17.1108 1.02491 15.9898 0.534912 14.7508 0.534912C12.3708 0.534912 10.4398 2.34391 10.4398 4.57391C10.4398 4.89091 10.4778 5.19991 10.5518 5.49491C6.96981 5.32591 3.79381 3.71791 1.66781 1.27491C1.29681 1.87191 1.08481 2.56491 1.08481 3.30591C1.08481 4.70591 1.84581 5.94391 3.00181 6.66791C2.29581 6.64591 1.63181 6.46491 1.04981 6.16191C1.04981 6.17991 1.04981 6.19491 1.04981 6.21391C1.04981 8.17091 2.53481 9.80291 4.50681 10.1739C4.14581 10.2659 3.76381 10.3139 3.37181 10.3139C3.09381 10.3139 2.82381 10.2899 2.56081 10.2439C3.10881 11.8469 4.70081 13.0159 6.58681 13.0489C5.11181 14.1319 3.25381 14.7769 1.23381 14.7769C0.885811 14.7769 0.542811 14.7579 0.205811 14.7209C2.11281 15.8659 4.37881 16.5359 6.81281 16.5359C14.7408 16.5359 19.0758 10.3799 19.0758 5.04291C19.0758 4.86691 19.0708 4.69391 19.0628 4.51991C19.9048 3.94991 20.6358 3.23891 21.2138 2.42991Z"
+                fill="white"
+              />
+            </svg>
+            <svg
+              width="26"
+              height="19"
+              viewBox="0 0 26 19"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20.61 0.183838H5.98961C3.12627 0.183838 0.799805 2.5511 0.799805 5.46465V12.8975C0.799805 15.8166 3.12627 18.1783 5.98961 18.1783H20.6046C23.4733 18.1783 25.7944 15.8111 25.7944 12.8975V5.46465C25.7998 2.5511 23.4733 0.183838 20.61 0.183838ZM17.0959 9.54803L10.2575 12.8644C10.0731 12.9527 9.86705 12.8203 9.86705 12.6106V5.76814C9.86705 5.55845 10.084 5.42602 10.2629 5.51983L17.1013 9.04589C17.3074 9.15073 17.302 9.4487 17.0959 9.54803Z"
+                fill="#FF1313"
+              />
+            </svg>
+            <svg
+              width="20"
+              height="19"
+              viewBox="0 0 20 19"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M19.9602 13.6255V9.55405V0.68042H2.93894L0.811279 2.97712V15.087H6.13043V18.8453H8.47085L11.024 16.131H17.407L19.9602 13.6255ZM7.40694 13.4168H4.00268C3.76864 13.4168 3.57715 13.2289 3.57715 12.9992V2.76841C3.57715 2.53874 3.76864 2.35083 4.00268 2.35083H17.6197C17.8537 2.35083 18.0452 2.53874 18.0452 2.76841V10.7025C18.0452 10.8173 18.0027 10.9217 17.9229 11L15.5825 13.2967C15.5027 13.375 15.391 13.4168 15.2793 13.4168H11.3697L8.07183 15.6404C8.00268 15.6874 7.91757 15.7135 7.83247 15.7135C7.76332 15.7135 7.69949 15.6978 7.63566 15.6665C7.49204 15.5934 7.40694 15.4525 7.40694 15.2959V13.4168Z"
+                fill="white"
+              />
+              <path
+                d="M13.79 9.76298V5.58716H12.0878V9.76298H13.79ZM9.53465 9.76298V5.58716H7.83252V9.76298H9.53465Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+        </div>
+        <hr />
+        <div class="menu2">
+          <p>&copy; 2018 Your Games, Inc. All Rights Reserved.</p>
+          <div class="menu2-item">
+            <a href="#">PRIVACY POLICY</a>
+            <span>|</span>
+            <a href="#">TERMS OF SERVICE</a>
+            <span>|</span>
+            <a href="#">CODE OF CONDUCT</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>
