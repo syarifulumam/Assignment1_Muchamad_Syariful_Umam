@@ -435,6 +435,9 @@ footer .menu2 p {
 
 @media (max-width: 480px) {
   /* smartphones, Android phones, landscape iPhone */
+  h2 {
+    font-size: 36px;
+  }
   .about {
     display: block;
     text-align: center;
@@ -458,17 +461,6 @@ footer .menu2 p {
   .feature .feat-text {
     width: 100%;
   }
-  .feature {
-    box-shadow: 0px 0px 400px 109px rgba(0, 0, 0, 1) inset;
-    -webkit-box-shadow: 0px 0px 400px 109px rgba(0, 0, 0, 1) inset;
-    -moz-box-shadow: 0px 0px 400px 109px rgba(0, 0, 0, 1) inset;
-  }
-  .requirement table {
-    width: 100%;
-  }
-  .requirement h2 {
-    font-size: 40px;
-  }
   .quote {
     background-color: #000;
     display: block;
@@ -484,10 +476,7 @@ footer .menu2 p {
     background-size: cover;
     height: fit-content;
   }
-  .newsletter .newsletter-space {
-    display: none;
-  }
-  .newsletter .newsletter-text {
+  .requirement table {
     width: 100%;
   }
   .newsletter .newsletter-text form {
@@ -518,6 +507,23 @@ footer .menu2 p {
 }
 
 @media (max-width: 830px) {
+  .newsletter .newsletter-space {
+    display: none;
+  }
+  .newsletter .newsletter-text {
+    width: 100%;
+  }
+  .feature {
+    box-shadow: 0px 0px 400px 109px rgba(0, 0, 0, 1) inset;
+    -webkit-box-shadow: 0px 0px 400px 109px rgba(0, 0, 0, 1) inset;
+    -moz-box-shadow: 0px 0px 400px 109px rgba(0, 0, 0, 1) inset;
+  }
+  .feature .feat-space {
+    display: none;
+  }
+  .feature .feat-text {
+    width: 100%;
+  }
   footer .menu {
     flex-wrap: wrap;
   }
