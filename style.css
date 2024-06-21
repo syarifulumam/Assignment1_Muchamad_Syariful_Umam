@@ -251,12 +251,10 @@ header .hero .scroll span {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: auto;
   width: 100%;
   display: flex;
   flex-direction: column;
-  /* align-items: center;
-  justify-content: center; */
   color: white;
   padding: 60px 40px;
   box-shadow: 115px -2px 400px 97px rgba(0, 0, 0, 1) inset;
@@ -289,7 +287,7 @@ header .hero .scroll span {
 .quote {
   background-image: url("assets/bg-quote.png");
   background-position: center;
-  height: 100vh;
+  height: auto;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -437,36 +435,6 @@ footer .menu2 p {
 
 @media (max-width: 480px) {
   /* smartphones, Android phones, landscape iPhone */
-  .hamburger {
-    display: block;
-    position: absolute;
-    top: 23px;
-    right: 10px;
-    color: white;
-    width: 30px;
-  }
-  .sticky nav {
-    display: block;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 20px 40px;
-    background: rgba(8, 8, 8, 0.7);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  }
-  .sticky nav ul {
-    display: none;
-    list-style: none;
-  }
-  .sticky nav ul li {
-    padding: 30px 0px;
-    margin-left: 0px;
-  }
-  .sticky nav .auth a {
-    display: none;
-    padding: 30px 0px;
-    margin-left: 0px;
-  }
   .about {
     display: block;
     text-align: center;
@@ -546,5 +514,42 @@ footer .menu2 p {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+  }
+}
+
+@media (max-width: 830px) {
+  footer .menu {
+    flex-wrap: wrap;
+  }
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 23px;
+    right: 10px;
+    color: white;
+    width: 30px;
+  }
+  .sticky nav {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px 40px;
+    width: 100%;
+    background: rgba(8, 8, 8, 0.7);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  }
+  .sticky nav ul {
+    display: none;
+    list-style: none;
+  }
+  .sticky nav ul li {
+    padding: 30px 0px;
+    margin-left: 0px;
+  }
+  .sticky nav .auth a {
+    display: none;
+    padding: 30px 0px;
+    margin-left: 0px;
   }
 }
