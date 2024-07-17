@@ -17,4 +17,4 @@ The tech stack used in building the Traditional Game Landing Page is :
 > - Javascript
 
 ![Landing Page Traditional Game](https://i.ibb.co.com/YdSKfhH/New-Project-1.jpg)
-![Full Page](https://i.ibb.co.com/TTG0nVh/screencapture-syarifulumam-github-io-Assignment1-Muchamad-Syariful-Umam-2024-07-17-13-34-46.png)
+![Full Page](https://i.ibb.co.com/TW9my3k/screencapture-syarifulumam-github-io-Assignment1-Muchamad-Syariful-Umam-2024-07-17-13-34-46-1.png)
